@@ -1,0 +1,160 @@
+header{
+    padding: 0 120px;
+    background-color: #EAEBEB;/*rgb(238,238,238);*/
+    border-bottom: 1px solid rgb(216, 216, 216);
+    color: #8C7C6B; /*rgb(252, 144, 115);*/
+}
+
+header a{
+   color:#8C7C6B; /*#190E0C;*/
+   font-size: 1rem;
+}
+
+header select{
+    color:#8C7C6B; /*#190E0C;*/
+}
+
+header, header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li a{
+    display: block;
+    padding:5px 20px;
+}
+
+section{
+    height:100vh;
+    border:1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Container img{
+    height:300px;
+    border-radius:50%;
+}*/
+
+#intro {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../Images/world-map--graphic.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+
+}
+
+#hero-text{
+    text-align: center;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #EAEBEB;
+}
+
+.Container h2{
+    margin-top: 2%;
+    font-size: 3em;
+    /*font-family: 'Lucida Sans','Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+.Container p,ul{
+    margin-top: 2%;
+    font-size: 1rem;
+}
+
+footer{
+    line-height: 100px;
+    display:flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+body{
+    font-family: "Cormorant+Garamond", sans-serif;
+}
+
+#about{
+    background-color: hsl(180, 2%, 92%);
+}
+
+#insights{
+    background-color:hsl(29, 30%, 76%) ;
+}
+
+#services{
+    background-color: #EAEBEB;
+}
+
+/* input styling*/
+
+.search{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    background-color: #2A3A3B;
+    border-radius: 50px;
+    padding: 1rem;
+    border:2px solid #eeee
+
+}
+.searchInput{
+    width: 100%;
+    border: none;
+}
+
+.searchInput:focus{
+    outline:none;
+}
+
+
+
+#logo{
+    font-size: 2rem;
+}
+
+p, h1, h2, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color: #2A3A3B;
+}
+
+h3{
+    text-align: center;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+/* button */
+.svg-icon {
+    width: 1em;
+    height: 0.8em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #2A3A3B;
+  }
+  
+  .svg-icon circle {
+    stroke: #2A3A3B;
+    stroke-width: 1;
+  }
+
+  .searchButton{
+    border: none;
+  }
