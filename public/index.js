@@ -43,6 +43,7 @@ let token="";
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener("click",()=>{
     const keyword = document.getElementById("searchInput").value;
+    
 
     // console.log(keyword)
     
@@ -55,7 +56,7 @@ let token="";
         const zone = data.data[0].address["regionCode"];
         const analytics = data.data[0].analytics.travelers["score"];
         console.log(city);
-        locationInfo.innerHTML =`Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100` ;
+        locationInfo.innerHTML =`Name: ${name} <br> Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100 <br> Date: ${date}` ;
 
 
     });
@@ -96,7 +97,10 @@ async function getCityLocation(keyword) {
 
   }
   
-  // Calling function to make API call
+
+  // APPLYING A CHANGE IN THE DOM
+
+  // Calling function to change the change the image of the slideshow every two seconds
   let slideIndex = 0;
 showSlides();
 
@@ -116,3 +120,20 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+// APPLYING A SUBMIT IN THE DOM
+
+const commentForm = document.getElementById("comment-form");
+const posts= document.getElementById("posts");
+const name = document.getElementById("nameInput").value;
+const date = document.getElementById("searchDateInput").value;
+
+
+commentForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    const commentsText = commentForm.commentsText.value;
+    
+
+    document.getElementById("posts").innerHTML =` <br> ${commentsText}`
+})
