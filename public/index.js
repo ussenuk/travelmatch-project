@@ -49,14 +49,15 @@ let token="";
     
     getCityLocation(keyword).then((data)=>{
         // console.log(data);
-        
 
         const city = data.data[0].detailedName;
         const country = data.data[0].address["countryName"];
         const zone = data.data[0].address["regionCode"];
         const analytics = data.data[0].analytics.travelers["score"];
         console.log(city);
-        locationInfo.innerHTML =`Name: ${name} <br> Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100 <br> Date: ${date}` ;
+        locationInfo.innerHTML =`Name: ${name1} <br> Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100 <br> Date: ${date1}` ;
+        
+
 
 
     });
@@ -125,15 +126,21 @@ function showSlides() {
 // APPLYING A SUBMIT IN THE DOM
 
 const commentForm = document.getElementById("comment-form");
+const searchForm = document.getElementById("search-form")
 const posts= document.getElementById("posts");
-const name = document.getElementById("nameInput").value;
-const date = document.getElementById("searchDateInput").value;
+const name1 = document.getElementById("nameInput").value;
+const date1 = document.getElementById("searchDateInput").value;
 
 
 commentForm.addEventListener("submit", (event)=>{
     event.preventDefault();
+    
     const commentsText = commentForm.commentsText.value;
     
+    var allInputs = document.querySelectorAll('input');
+    allInputs.forEach(singleInput => singleInput.value = '');
 
-    document.getElementById("posts").innerHTML =` <br> ${commentsText}`
+    document.getElementById("posts").innerHTML =` <br> ${commentsText}`;
+    commentForm.reset();
+    
 })
