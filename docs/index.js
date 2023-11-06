@@ -43,6 +43,8 @@ let token="";
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener("click",()=>{
     const keyword = document.getElementById("searchInput").value;
+    const name = document.getElementById("nameInput").value;
+    const date = document.getElementById("searchDateInput").value;
     
 
     // console.log(keyword)
@@ -128,8 +130,7 @@ function showSlides() {
 const commentForm = document.getElementById("comment-form");
 const searchForm = document.getElementById("search-form")
 const posts= document.getElementById("posts");
-const name = document.getElementById("nameInput").value;
-const date = document.getElementById("searchDateInput").value;
+
 
 
 commentForm.addEventListener("submit", (event)=>{
@@ -137,8 +138,8 @@ commentForm.addEventListener("submit", (event)=>{
     
     const commentsText = commentForm.commentsText.value;
     
-    var allInputs = document.querySelectorAll('input');
-    allInputs.forEach(singleInput => singleInput.value = '');
+    // var allInputs = document.querySelectorAll('input');
+    // allInputs.forEach(singleInput => singleInput.value = '');
 
     document.getElementById("posts").innerHTML =` <br> ${commentsText}`;
     commentForm.reset();
