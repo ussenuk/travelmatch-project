@@ -55,7 +55,7 @@ let token="";
         const zone = data.data[0].address["regionCode"];
         const analytics = data.data[0].analytics.travelers["score"];
         console.log(city);
-        locationInfo.innerHTML =`Name: ${name1} <br> Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100 <br> Date: ${date1}` ;
+        locationInfo.innerHTML =`Name: ${name} <br> Selected City : ${city} <br> Country : ${country} <br> Region : ${zone} <br> Destination Score: ${analytics} out of 100 <br> Date: ${date}` ;
         
 
 
@@ -128,8 +128,8 @@ function showSlides() {
 const commentForm = document.getElementById("comment-form");
 const searchForm = document.getElementById("search-form")
 const posts= document.getElementById("posts");
-const name1 = document.getElementById("nameInput").value;
-const date1 = document.getElementById("searchDateInput").value;
+const name = document.getElementById("nameInput").value;
+const date = document.getElementById("searchDateInput").value;
 
 
 commentForm.addEventListener("submit", (event)=>{
