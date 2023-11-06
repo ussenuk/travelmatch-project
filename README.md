@@ -5,13 +5,11 @@
 Many people strongly desire to escape from their native location for a better life and success. Whether you are a student aiming for quality education, a poor citizen dreaming of an excellent job placement, or an individual looking to tour other regions worldwide, Traveling or relocating can be challenging.
 
 ## solution
-
+![alt text](docs/Images/travelmatch.png)
 We offer services that meet your expectations by providing invitations, booking, and care from A to Z upon arrival. One of our strengths? Our local specialized in their living area. A team of individuals that allows simple and harmonious travel between countries. 
 
 ## Solution proposal in images
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](docs/Images/travelmatch2.png)
 ## Solution Description
 
 Travel Match integrates travel solution APIs, particularly Amadeus APIs, to collect and process data provided by users. 
