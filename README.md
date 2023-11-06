@@ -9,7 +9,7 @@ Many people strongly desire to escape from their native location for a better li
 We offer services that meet your expectations by providing invitations, booking, and care from A to Z upon arrival. One of our strengths? Our local specialized in their living area. A team of individuals that allows simple and harmonious travel between countries. 
 
 ## Solution proposal in images
-![alt text](docs/Images/travelmatch2.png)
+![alt text](docs/Images/gem.png)
 ## Solution Description
 
 Travel Match integrates travel solution APIs, particularly Amadeus APIs, to collect and process data provided by users. 
